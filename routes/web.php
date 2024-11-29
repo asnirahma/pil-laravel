@@ -32,10 +32,7 @@ Route::get('profile', function () {
 });
 
 Route::get('array', function () {
-    //Infinite Loop
-    $nilai_awal = 1;
-    while ($nilai_awal <= 5) {
-        echo 'Hello,Nama Aku ASNI ' . $nilai_awal . ' x <br>';
-        $nilai_awal++;
+    for ($i = 1; $i < 5; $i++) {
+        echo 'Helo, Nama Aku Asni' . $i + 1 . 'x<br>';
     }
 });
