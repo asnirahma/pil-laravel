@@ -30,3 +30,12 @@ Route::get('profile', function () {
     // return view('profile',compact('nama'));
     return view('profile')->with('nama', $nama);
 });
+
+Route::get('array', function () {
+    //Infinite Loop
+    $nilai_awal = 1;
+    while ($nilai_awal <= 5) {
+        echo 'Hello,Nama Aku ASNI ' . $nilai_awal . ' x <br>';
+        $nilai_awal++;
+    }
+});
