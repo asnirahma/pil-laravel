@@ -22,17 +22,15 @@ Route::get('about', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    $NIM = [0702223164, 0702223160, 0702221042, 0702221045];
+    $Nama = ['ASNI', 'RANSU', 'BUJE', 'CITRA'];
+    $jumlah = count($NIM);
+    return view('mahasiswa', compact('NIM', 'jumlah', 'Nama'));
 });
+
 
 Route::get('profile', function () {
     $nama = 'Asni';
     // return view('profile',compact('nama'));
     return view('profile')->with('nama', $nama);
-});
-
-Route::get('array', function () {
-    for ($i = 1; $i < 5; $i++) {
-        echo 'Helo, Nama Aku Asni' . $i + 1 . 'x<br>';
-    }
 });
