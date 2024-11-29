@@ -38,6 +38,48 @@
 
   <div class="container" style="margin-left: 30px">
     <h1>Ini adalah halaman Mahasiswa</h1>
+
+    <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+      <thead>
+        <tr>
+          <th>NIM</th>
+          <th>Nama Mahasiswa</th>
+          <th>Jenis Kelamin</th>
+          <th colspan="2">TTL</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0702223164</td>
+          <td>ASNI RAHMA YANTI</td>
+          <td>Perempuan</td>
+          <td>16-Agustus-2003</td>
+          <td rowspan="4">MEDAN</td>
+        </tr>
+        <tr>
+          <td>0702223160</td>
+          <td>RANI ANJELINA RITONGA</td>
+          <td>Perempuan</td>
+          <td>13-Januari-2005</td>
+          
+        </tr>
+        <tr>
+          <td>0702221042</td>
+          <td>RANI RAMADHANI</td>
+          <td>Perempuan</td>
+          <td>27-November-2004</td>
+          
+        </tr>
+        <tr>
+          <td>0702221045</td>
+          <td>CITRA RAMADHANI</td>
+          <td>Perempuan</td>
+          <td>06-November-2004</td>
+          
+        </tr>
+      </tbody>
+    </table>
   </div>
   
 
