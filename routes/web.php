@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\mahasiswacontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,24 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('about', function () {
-    return view('about');
-});
-
-Route::get('mahasiswa', function () {
-    $NIM = [0702223164, 0702223160, 0702221042, 0702221045];
-    $Nama = ['ASNI', 'RANSU', 'BUJE', 'CITRA'];
-    $jumlah = count($NIM);
-    return view('mahasiswa', compact('NIM', 'jumlah', 'Nama'));
-});
-
-
-Route::get('profile', function () {
-    $nama = 'Asni';
-    // return view('profile',compact('nama'));
-    return view('profile')->with('nama', $nama);
-});
+Route::resource('mahasiswa', mahasiswacontroller::class);

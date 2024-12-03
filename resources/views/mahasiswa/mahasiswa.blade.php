@@ -41,7 +41,15 @@
 
     <div class="row">
       <div class="col-sm-6">
-        <h4>Table Mahasiswa</h4>
+        <h4>Table mahasiswa</h4>
+      </div>
+      <div class="col-sm-6" style="text-align: right">
+        <a href="/mahasiswa/create" class="btn btn-info btn-sm">Tambah Mahasiswa</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
         <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
           <thead>
             <tr>
@@ -53,55 +61,12 @@
             </tr>
           </thead>
           <tbody>
-           @for ($i = 0; $i < $jumlah; $i++)
-           <tr>
-            <td>{{ $NIM[$i] }}</td>
-            <td>{{ $Nama[$i] }}</td>
-            <td>Perempuan</td>
-            <td>Kota Medan</td>
-           </tr>
-               
-           @endfor
+           
             
           </tbody>
         </table>
       </div>
-      <div class="col-sm-6">
-        <h4>Form Mahasiswa</h4>
-        <form action="" method="GET">
-          <div class="row">
-            <div class="col-sm-6">
-              <label for="">NIM</label>
-          <input type="Number" name="NIM" class="form-control" placeholder="Input NIM">
-            </div>
-            <div class="col-sm-6">
-              <label for="">Nama Mahasiswa</label>
-          <input type="text" name= "Nama_Mahasiswa" class="form-control" placeholder="Input Nama Mahasiswa">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <label for="">Tanggal Lahir</label>
-              <input type="date" name= "Tanggal_lahir" class="form-control">
-            </div>
-            <div class="col-sm-6">
-              <label for="">Program Studi</label>
-              <select name="Program_Studi" class="form-control">
-                <option value="">Sistem Informasi</option>
-                <option value="">Ilmu Komputer</option>
-                <option value="">Ilmu Komunikasi</option>
-              </select>
-            </div>
-          </div>
-          <div class="row mt-2">
-            <div class="col-sm-12">
-              <button class=" btn btn-primary" style="width: 100%" type="submit">Simpan</button>
-            </div>
-          </div>
-            
-          
-        </form>
-      </div>
+    
     </div>
 
   </div>
