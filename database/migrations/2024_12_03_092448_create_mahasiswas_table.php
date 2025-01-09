@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id();
-            $table->integer('nim')->unique();
+            $table->integer('nim', 10)->unique();
             $table->string('nama_mahasiswa', 35)->nullable();
             $table->enum('jk', ['l', 'p']);
             $table->date('tanggal_lahir')->nullable();

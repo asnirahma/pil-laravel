@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
+  <title>Mahasiswa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -36,26 +36,40 @@
     </div>
   </nav>
 
-  <div class="container" style="margin-left: 100px">
-    <h1>Ini adalah halaman Home</h1>
-    <hr>
+  <div class="container" style="margin-left: 30px">
+    <h1>Ini adalah halaman Mahasiswa</h1>
 
     <div class="row">
-      <div class="col-sm-6"> 
-        <h4>What is Lorem Ipsum?</h4>
-        <p style="text-align: justify">
-          <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
       <div class="col-sm-6">
-        <h4>Why do we use it?</h4>
-        <p style="text-align: justify">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
+        <h4>Table mahasiswa</h4>
+      </div>
+      <div class="col-sm-6" style="text-align: right">
+        <a href="/mahasiswa/create" class="btn btn-info btn-sm">Tambah Mahasiswa</a>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+          <thead>
+            <tr>
+              <th>NIM</th>
+              <th>Nama Mahasiswa</th>
+              <th>Jenis Kelamin</th>
+              <th colspan="2">TTL</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+           
+            
+          </tbody>
+        </table>
+      </div>
+    
+    </div>
+
   </div>
-  
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
